@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=69637c66-5709-4966-be79-3ca9faadd730&lang=ru_RU" type="text/javascript"></script>
+  <script src="service.js"></script>
+  <script src = "javscript.js"></script>
+  <link rel="stylesheet" href="cssstyle.css">
+  <link rel="stylesheet" href="animate.css">
+
+
+  <title>Site</title>
+</head>
+<body> 
+  <div id="map"></div>
+
+  <div id="Open">
+
+    <span style="font-size: 40px;font-family: 'Bradley Hand ITC'">P.Search</span>
+
+    <label>
+      <p>Логин:<br> <input  id="nameUser" class="SearchLine" style="height: 25px;" type="text" name="name" size="25" required/></p>
+    </label>
+
+    <label>
+      <p>Пароль:<br> <input id="passUser" class="SearchLine" style="height: 25px;" type="password" name="pass" size="25" required/></p>
+    </label>
+ 
+    
+    <button id="SendButton" class="ost_buttons" style="width:50px;height: 29px;color:#000000;background-color:#b6c8ff96;" text-align="right">Войти</button>
+    <button id="Registr_button" class="ost_buttons" style="width: 115px;">Регистрация</button>
+    
+    
+  </div>
+
+  <div id="Search">
+    <input type="text" id="SearchLine" class="SearchLine" style="height: 30px;" size="45" placeholder="Введите адрес">&nbsp;<button id="searchButton" class="ost_buttons" style="width:50px;height: 29px;color:#000000;background-color:#b6c8ff96;">Поиск</button>
+  </div>
+
+
+  <div id="Ads">
+    <div id='head_1' style="display:block ruby;">
+      <div style="width: 55%;">
+        <h1><span>Объявления</span></h1>
+      </div>
+    </div>
+    <table id="Table" cellpadding="10"></table>
+  </div>
+
+
+  <div id="Form_fil">
+
+    <div class="header_fil">
+      <button id="Show_Fil" class="ost_buttons" style="width:75px;color:#000000;background-color:#b6c8ff96;">Фильтры</button>
+    </div>
+    <div class="menu_fil">
+
+      <div id="Form_insert"></div>
+
+      <div id="ButtonDiv" class="header_fil" style='margin-top:22px;'>
+        <button id='But_fil'>Применить</button>
+      </div>
+
+    </div>
+
+  </div>
+  
+
+  <div id='Settings' class="animate__backInRight">
+
+    <div style="text-align: center;" class="change_set">
+      <button id="CreateAd" class="extra_but" style="width: 100px;">Добавить</button>
+    </div>
+    <div id="sec_line">
+      <div class="change_set">
+        <button id="DeleteAd" class="ost_buttons" style="width: 100px;">Удалить</button>
+      </div>
+      <div class="change_set">
+        <button id="EditAd" class="ost_buttons" style="width: 100px;">Редакт.</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <button id="ViewAds" class="ost_buttons" style="width:125px;color:#000000;background-color:#b6c8ff96;">Все объявления</button>
+
+  <div id="Forma">
+    <div id="zatemnenie">
+      <div id="okno"></div>
+    </div>
+  </div>
+  
+
+</body>
+</html>
